@@ -1,0 +1,6 @@
+@TweetScreenshotApp_HostAddress = http://localhost:5110
+
+GET {{TweetScreenshotApp_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
