@@ -1,0 +1,11 @@
+﻿services:
+  tweet_screenshot_app:
+    platform: linux/amd64
+    image: ${DOCKER_REGISTRY-}tweetscreenshotapp
+    container_name: ScrappingTweetScreenshot.Api
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8000:8080
+      - 8001:8081

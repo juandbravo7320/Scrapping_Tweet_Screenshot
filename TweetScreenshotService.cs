@@ -4,7 +4,8 @@ namespace TweetScreenshotApp;
 
 public class TweetScreenshotService
 {
-    public async Task<byte[]> CaptureTweetImageAsync2(string tweetUrl)
+    
+    public async Task<byte[]> CaptureTweetImageAsync(string tweetUrl)
     {   
         var browserFetcher = new BrowserFetcher();
         await browserFetcher.DownloadAsync();
